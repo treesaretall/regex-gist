@@ -1,10 +1,13 @@
-# Title (replace with your title)
-
-Introductory paragraph (replace this with your text)
+# Email Verification Via Regular Expression(Regex)
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regex is shorthand for Regular Expression which is an Object used in in many programming languages in applications for detecting text patterns in strings. This tutorial will review a basic Regex application for email validation using Javascript.
+
+There are two aspects of Regex which will be covered in this tutorial.
+First we review the regular expression object and it's syntax and secondly a brief introduction to the methods associated with the regular expression object.
+
+For the tutorial a Regular Expression validating email formats will be used. The goal for this Regex application is to detect the existence of three substrings separated be a single "@" and another "." character in the submited email. The text prior to "@" is called the email prefix, while the text to right of "@" is the email domain.
 
 ## Table of Contents
 
