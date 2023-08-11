@@ -57,3 +57,21 @@ let isValid = reg_email.test(input_email);
 Where `isValid` is a Boolean value that's `true` when the `input_email` string adheres to the rules defined in `reg_email`.
 
 ---
+
+## Anchoring the Pattern <a id=anchors></a>
+
+The regular expression starts and ends with forward slashes ("/"), defining boundaries for the pattern. The "^" symbol signifies the start, and "$" symbol marks the end of the string.
+
+Other types of anchors exist but aren't utilized in this specific Regex expression.
+
+---
+
+## Quantifying Patterns <a id=quantifiers></a>
+
+Quantifiers specify the number or range of characters to match. Examples of quantifiers include "_", "+", "?", and "{num1,num2}". For instance, "_" allows any number of preceding matches (including 0), "+" requires at least one match, "?" matches 0 or 1 time, and "{num1,num2}" specifies a range of occurrences between `num1` and `num2`.
+
+In our expression, "\w+" denotes any sequence of letters, and "\w{2,3}" indicates a character sequence of length 2 to 3.
+
+---
+
+## Grouping for Structure <a id="grouping-constructs"></a>
