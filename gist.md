@@ -87,3 +87,15 @@ In our `reg_email`, there are three grouping constructs (highlighted in orange) 
 <span style="color:yellow">/</span><span style="color:red">^</span>\w<span style="color:aqua">+</span><span style="color:orange">(</span><span style="color:brown">[</span>\.-<span style="color:brown">]</span>? \w<span style="color:aqua">+</span><span style="color:orange">)</span> \*<span style="color:green">@</span><span style="color:aqua">\w+</span><span style="color:orange">(</span><span style="color:brown">[</span>\.-<span style="color:brown">]</span>?<span style="color:aqua">\w+</span><span style="color:orange">)</span> \*<span style="color:orange">(</span><span style="color:green">\\.</span><span style="color:aqua">\w{2,3}</span><span style="color:orange">)</span> +<span style="color:red">$</span><span style="color:yellow">/</span>
 
 ---
+
+## Understanding Character Classes <a id="character-classes"></a>
+
+Character expressions define the types of characters to be searched for. For instance:
+
+- "." matches any character except a newline.
+- "\w" matches word characters (alphanumeric or underscore), "\d" matches digits, and "\s" matches whitespace.
+- "[abc]" includes letters 'a', 'b', or 'c'.
+- "[0-9]" matches digits 0 through 9.
+- "[.-]" includes period and hyphen.
+
+---
