@@ -62,6 +62,8 @@ Where `isValid` is a Boolean value that's `true` when the `input_email` string a
 
 The regular expression starts and ends with forward slashes ("/"), defining boundaries for the pattern. The "^" symbol signifies the start, and "$" symbol marks the end of the string.
 
+<span style="color:yellow">/</span><span style="color:red">^</span>\w+([\.-]?\w+)\*<span style="color:green">@</span>\w+([\.-]?\w+)\*(<span style="color:green">\\.</span>\w{2,3})+<span style="color:red">$</span><span style="color:yellow">/</span>
+
 Other types of anchors exist but aren't utilized in this specific Regex expression.
 
 ---
@@ -70,8 +72,18 @@ Other types of anchors exist but aren't utilized in this specific Regex expressi
 
 Quantifiers specify the number or range of characters to match. Examples of quantifiers include "_", "+", "?", and "{num1,num2}". For instance, "_" allows any number of preceding matches (including 0), "+" requires at least one match, "?" matches 0 or 1 time, and "{num1,num2}" specifies a range of occurrences between `num1` and `num2`.
 
+<span style="color:yellow">/</span><span style="color:red">^</span>\w<span style="color:aqua">+</span>([\.-]<span style="color:aqua">?</span>\w<span style="color:aqua">+</span>)\*<span style="color:green">@</span>\w<span style="color:aqua">+</span>([\.-]<span style="color:aqua">?</span>\w<span style="color:aqua">+</span>)\*( <span style="color:green">\\.</span>\w<span style="color:aqua">{2,3}</span>)+<span style="color:red">$</span><span style="color:yellow">/</span>
+
 In our expression, "\w+" denotes any sequence of letters, and "\w{2,3}" indicates a character sequence of length 2 to 3.
 
 ---
 
 ## Grouping for Structure <a id="grouping-constructs"></a>
+
+Grouping constructs help manage repeating subexpressions and allow applying quantifiers to multiple instances. They also enhance code clarity. Grouped subexpressions are enclosed in parentheses "()" or square brackets "[]". "(" and ")" denote capturing subexpressions, while "[]" is used for character ranges (e.g., [a-g] matches any letter between 'a' and 'g').
+
+In our `reg_email`, there are three grouping constructs (highlighted in orange) and nested subexpressions in square brackets (highlighted in brown).
+
+<span style="color:yellow">/</span><span style="color:red">^</span>\w<span style="color:aqua">+</span><span style="color:orange">(</span><span style="color:brown">[</span>\.-<span style="color:brown">]</span>? \w<span style="color:aqua">+</span><span style="color:orange">)</span> \*<span style="color:green">@</span><span style="color:aqua">\w+</span><span style="color:orange">(</span><span style="color:brown">[</span>\.-<span style="color:brown">]</span>?<span style="color:aqua">\w+</span><span style="color:orange">)</span> \*<span style="color:orange">(</span><span style="color:green">\\.</span><span style="color:aqua">\w{2,3}</span><span style="color:orange">)</span> +<span style="color:red">$</span><span style="color:yellow">/</span>
+
+---
