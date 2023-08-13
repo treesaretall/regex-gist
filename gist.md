@@ -116,3 +116,19 @@ Let's combine the concepts discussed into the complete `reg_email` expression. T
 Email prefix consists of sequences of word characters followed by optional hyphens or periods. Email domain follows a similar structure but includes a period followed by 2-3 characters.
 
 ---
+
+## Testing the Regex <a id="testing"></a>
+
+The provided image demonstrates tests conducted on the discussed regex expression. For a clearer view, please refer to the "tests.png" file.
+
+---
+
+![Image of test of Regex](./test.png)
+
+---
+
+## Additional Resources on Regex <a id="additionalresources"></a>
+
+---
+
+## About the Author <a id="aboutauthor"></a>
