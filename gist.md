@@ -99,3 +99,20 @@ Character expressions define the types of characters to be searched for. For ins
 - "[.-]" includes period and hyphen.
 
 ---
+
+## Escaping Special Characters <a id="character-escapes"></a>
+
+Certain characters require a backslash for correct interpretation in Regex. For instance, the period character "." needs to be escaped as "\\." to avoid confusion with the quantifier for any character except newline. The backslash itself is represented as "\\\\" in the expression.
+
+---
+
+## Putting it All Together <a id="puttingitalltogether"></a>
+
+Let's combine the concepts discussed into the complete `reg_email` expression. The expression can be divided into two parts: email prefix and email domain.
+
+- Email prefix: `\w+([\.-]?\w+)*`
+- Email domain: `\w+([\.-]?\w+)*(\.\w{2,3})+`
+
+Email prefix consists of sequences of word characters followed by optional hyphens or periods. Email domain follows a similar structure but includes a period followed by 2-3 characters.
+
+---
