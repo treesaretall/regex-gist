@@ -129,6 +129,16 @@ The provided image demonstrates tests conducted on the discussed regex expressio
 
 ## Additional Resources on Regex <a id="additionalresources"></a>
 
+[Regex Tutorial: Matching a Username](https://coding-boot-camp.github.io/full-stack/computer-science/regex-tutorial),
+
+[Introduction to regular expressions video](https://youtu.be/7DG3kCDx53c),
+
+[how to create a gist](https://help.github.com/en/github/writing-on-github/creating-gists),
+
+[video on how to use gists](https://www.youtube.com/watch?v=wc2NlcWjQHw)
+
 ---
 
 ## About the Author <a id="aboutauthor"></a>
+
+As a software developer with a unique background as a prior Naval Special Operations Medic and Master Training Specialist, I bring a diverse skill set and a passion for problem-solving to the field of technology. My experience as a medic has instilled in me a strong sense of attention to detail, adaptability, and the ability to remain calm under pressure. These qualities translate seamlessly into my work as a software developer, where I thrive in complex and fast-paced environments.
